@@ -30,6 +30,8 @@ import java.sql.*;
 import java.util.Properties;
 import java.util.Vector;
 
+import com.study.dvd.config.DBConfig;
+
 
 /**
  * Manages a java.sql.Connection pool.
@@ -40,9 +42,9 @@ public class DBConnectionMgr {
 
     private Vector connections = new Vector(10);
     private String _driver = "com.mysql.cj.jdbc.Driver",
-    _url = "jdbc:mysql://korea-it.c3uqsug2e5xl.ap-northeast-2.rds.amazonaws.com:3306/dvd_db",
-    _user = "admin",
-    _password = "1q2w3e4r!!";
+    _url = DBConfig.URL,
+    _user = DBConfig.USERNAME,
+    _password = DBConfig.PASSWORD;
     
     private boolean _traceOn = false;
     private boolean initialized = false;

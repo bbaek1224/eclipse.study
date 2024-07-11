@@ -13,7 +13,7 @@ import com.study.dvd.util.DBConnectionMgr;
 public class DvdDao {
 	private static DBConnectionMgr pool = DBConnectionMgr.getInstance();
 	
-	public static List<Dvd> searchDvdTitle(String searchText) {
+	public static List<Dvd> searchDvdByTitle(String searchText) {
 		List<Dvd> dvds = new ArrayList<>();
 		Connection con = null;
 		PreparedStatement pstmt = null;

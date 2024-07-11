@@ -16,5 +16,5 @@ public class Dvd {
 	private int publisherId;
 	private String publisherName;
 	private int publicationYear;
-	private LocalDate datebaseDate;
+	private LocalDate databaseDate;
 }
